@@ -36,6 +36,7 @@ const switchTab = (id) => {
         document.getElementById( "posts" ).style.display = "grid";
         document.getElementById( "liked" ).style.display = "none";
         document.getElementById( "reported" ).style.display = "none";
+        showQuectionAnswer();
     } else if (id === "liked") {
         document.getElementById( "liked" ).style.display = "block";
         document.getElementById( "posts" ).style.display = "none";
@@ -144,6 +145,7 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
+  document.getElementById('qucetion-answer').innerHTML = "";
   document.getElementById( "liked" ).innerHTML = "";
     const likedPosts = getLikedPosts();
     likedPosts.forEach((post) => {
@@ -153,6 +155,7 @@ const displayLikedPosts = () => {
 };
 
 const displayReportedPosts = () => {
+  document.getElementById('qucetion-answer').innerHTML = "";
   document.getElementById( "reported" ).innerHTML = "";
     const reportedPosts = getReportedPosts();
     reportedPosts.forEach((post) => {
@@ -169,3 +172,28 @@ const loadPosts = async () =>{
 }
 
 loadPosts();
+
+const showQuectionAnswer = () =>{
+  const conteiner = document.getElementById('qucetion-answer');
+  conteiner.innerHTML =`
+  <div>
+                <h1 class="text-center my-4">Answer</h1>
+           <div class="row">
+            <div class="col-md-6 col-12">
+                <h3 class="text-center mb-4">
+                    javascript যেভাবে কাজ করে.
+                </h3>
+                <p>Javascript একটি  progamming Language, javascript কে আবার EcmaScript ও বলে। Javascript multiline কাজে ব্যবহার করা হয়।  Javascript Web Application হিসাবে কাজ করে। আবার যে কোনো Application এ  ব্যবহার করা হয়। যেমন : Client Site, Server site, Mobile application  এমন কি Cloud Base   কে কোনো Application Developed করা যায়। </p>
+            </div>
+            <div class="col-md-6 col-12">
+                <h3 class="text-center mb-4">
+                    javascript যেভাবে কাজ করে.
+                </h3>
+                <p>Javascript একটি  progamming Language, javascript কে আবার EcmaScript ও বলে। Javascript multiline কাজে ব্যবহার করা হয়।  Javascript Web Application হিসাবে কাজ করে। আবার যে কোনো Application এ  ব্যবহার করা হয়। যেমন : Client Site, Server site, Mobile application  এমন কি Cloud Base   কে কোনো Application Developed করা যায়। </p>
+            </div>
+           </div>
+            </div>
+  `
+}
+
+showQuectionAnswer();
