@@ -181,15 +181,20 @@ const showQuectionAnswer = () =>{
            <div class="row">
             <div class="col-md-6 col-12">
                 <h3 class="text-center mb-4">
-                    javascript যেভাবে কাজ করে.
+                Javascript কিভাবে কাজ করে?
                 </h3>
-                <p>Javascript একটি  progamming Language, javascript কে আবার EcmaScript ও বলে। Javascript multiline কাজে ব্যবহার করা হয়।  Javascript Web Application হিসাবে কাজ করে। আবার যে কোনো Application এ  ব্যবহার করা হয়। যেমন : Client Site, Server site, Mobile application  এমন কি Cloud Base   কে কোনো Application Developed করা যায়। </p>
+                <p>Javascript একটি  progamming Language, javascript কে আবার EcmaScript ও বলে। Javascript web  এর মাতৃভাষা বলা হয়। JavaScript খুব সহজে শিক্ষা যায়। javascript high level language. Interactive কাজ গুলো করা জন্য JavaScript ব্যবহার করা হয়,আমাদের প্রোগ্রামিং ভাষা গুলো লেখি, লেখা গুলো সাহায্যে Machine এর  সাথে communica করতে পারি,
+                JavaScript Machine থেকে অনেক দূরে থাকে যার কারণে মাঝখানে যে complex-city, যে ব্যাপার গুলো যে ক্ষেত্রে JavaScript অনেক সহজ হয়ে যায়,যার কারণে programer জন্য  code লেখতে সহজ হয়.
+                Javascript multiline কাজে ব্যবহার করা হয়।  Javascript Web Application হিসাবে কাজ করে। আবার যে কোনো Application এ  ব্যবহার করা হয়। যেমন : Client Site, Server site, Mobile application  এমন কি Cloud Base   কে কোনো Application Developed করা যায়। </p>
             </div>
             <div class="col-md-6 col-12">
                 <h3 class="text-center mb-4">
-                    javascript যেভাবে কাজ করে.
+                Javascript এর Event Loop টা কি কাজ করে?
                 </h3>
-                <p>Javascript একটি  progamming Language, javascript কে আবার EcmaScript ও বলে। Javascript multiline কাজে ব্যবহার করা হয়।  Javascript Web Application হিসাবে কাজ করে। আবার যে কোনো Application এ  ব্যবহার করা হয়। যেমন : Client Site, Server site, Mobile application  এমন কি Cloud Base   কে কোনো Application Developed করা যায়। </p>
+                <p>JavaScript event revent asyenchronous way তে কাজ করে, অনেক ক্ষেত্রে, Asyenchronous code নিয়ে যখন কাজ করতে যায়, কোনটার পর কোনটা কাজ করবে, এ ক্ষেত্রে ২ ধরনের জিনিস আছে (১) Stack (2) Queue. 
+                কোনটা পর কোনটা code টা Syynchronously ভাবে কাজ করে সেইটা হলো Stack. আর Asynchronously ভাবে কাজ করে সেইটা হলো Queue. Event Loop 
+                first Stack কে চালায় তারপর Stack execute করা শেষ হলে Queue কে Exceute করে।
+                Full জিনিসটা javascript নিজেই loop এর মত করে চালায়,আর এইটাকে বলে Event Loop.</p>
             </div>
            </div>
             </div>
